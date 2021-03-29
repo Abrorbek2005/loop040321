@@ -1,0 +1,266 @@
+@import 'fonts';
+@import 'mixin';
+@import 'variable';
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color:#f6e58d ;
+    width: 1800px;
+    height: 1000px;
+    padding: 50px 50px  ;
+}
+
+.card {
+    @include display1 ;
+    margin-top: 70px;
+    margin-left: 100px;
+    background-color: #fff;
+    width: 1250px;
+    height: 605px;
+    box-shadow:10px 16px 28px  rgba(0, 0, 0,0, / 45%);
+
+
+    &__left {
+        @include display2 ; 
+        // border:1px solid black;
+        padding: 60px 50px 0 50px ; 
+        background-color: #eceff0;
+        
+
+
+        &-header {
+            @include display-header ; 
+            margin-bottom: 65px;
+            
+         
+
+                h1 {
+                    @include large-title-header ; 
+                    padding-right: 80px;
+                }
+                img {
+                    padding-left: 40px;
+                    width: 27px;
+                }
+
+        }
+
+        &-visa {
+            @include display2 ; 
+            border: 1px solid #f8f8f8;
+            border-radius: 5px;
+            padding: 10px 10px 9px 10px;
+            width: 294px;
+            background-color: #fff;
+           
+
+            img {
+                width: 75px;
+            }
+            h2 {
+                @include large-title ;  
+            }
+            h3 {
+                @include large-text2 ; 
+            }
+        }
+        &-master {
+            @include display2 ; 
+            border: 1px solid blue;
+            border-radius: 5px;
+            padding: 10px 10px 9px 10px;
+            width: 294px;
+            margin: 40px 0 40px 0;
+            background-color: #fff;
+
+            img {
+                width: 75px;
+            }
+            h2 {
+                @include large-title ;  
+            }
+            h3 {
+                @include large-text2 ; 
+            }
+        }
+        &-maestro {
+            @include display2 ; 
+            border: 1px solid #f8f8f8;
+            border-radius: 5px;
+            padding: 10px 10px 9px 10px;
+            width: 294px;
+            background-color: #fff;
+
+            img {
+                width: 75px;
+                padding-bottom: 20px;
+            }
+           
+        }
+    }
+
+
+
+    &__right {
+        // border: 1px solid black;
+        width: 850px;
+        height: 606px;
+      
+
+        &-header {
+            @include display-header ; 
+            margin:40px ;
+
+            h1 {
+                @include large-title-header ; 
+            }
+            h2 {
+                font-size: 30px;
+                font-family: 'Open Sans', sans-serif;
+            }
+        }
+
+        hr {
+            width: 750px ;
+            color: #f8f8f8;
+            margin-left: 50px;
+        }
+
+        &-apple {
+            @include display-option ;
+            margin-top: 60px;
+
+            img {
+                border: 1px solid black ;
+                border-radius: 50px;
+                margin-left:50px ;
+            }
+
+            &-text {
+                margin-left:0px;
+                margin-right: 120px;
+
+                h2 {
+                    @include large-text ; 
+                  
+                }
+                h3 {
+                    @include large-text2 ; 
+                    color:#c0bdbd ;
+                }
+            }
+
+            h1 {
+                font-size: 23px;
+                color: blue;
+                margin-right: 40px;
+                margin-left: 80px
+            }
+        }
+
+
+        &-fund {
+            @include display-option ;
+            margin-top: 55px;
+
+            img {
+                border: 1px solid black ;
+                border-radius: 50px;
+                margin-left: 50px;
+            }
+
+            &-text {
+                margin-left: 0px;
+                margin-right: 130px;
+
+                h2 {
+                    @include large-text ; 
+                  
+                }
+                h3 {
+                    @include large-text2 ; 
+                    color:#c0bdbd ;
+                }
+            }
+
+            h1 {
+                font-size: 23px;
+                color: green;
+                margin-left: 140px;
+                margin-right:40px; 
+            }
+            
+        }
+
+
+        &-energy {
+            @include display-option ;
+            margin-top: 55px;
+
+            img {
+                border: 1px solid black ;
+                border-radius: 50px;
+                margin-left: 50px;
+            }
+
+            &-text {
+                margin-left: 20px;
+                margin-right: 130px;
+
+                h2 {
+                    @include large-text ; 
+                  
+                }
+                h3 {
+                    @include large-text2 ; 
+                    color:#c0bdbd ;
+                }
+            }
+
+            h1 {
+                font-size: 23px;
+                color: blue;
+                margin-left: 140px;
+                margin-right:40px; 
+            }
+        }
+
+
+        &-eye {
+            @include display-option ;
+            margin-top: 55px;
+
+            img {
+                border: 1px solid black ;
+                border-radius: 50px;
+                margin-left:50px ;
+            }
+
+            &-text {
+                margin-left: 0px;
+                margin-right: 97px;
+
+                h2 {
+                    @include large-text ; 
+                  
+                }
+                h3 {
+                    @include large-text2 ; 
+                    color:#c0bdbd ;
+                }
+            }
+
+            h1 {
+                font-size: 23px;
+                color: blue;
+                margin-right: 40px;
+                margin-left: 80px
+            }
+        }
+    }
+}
